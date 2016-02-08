@@ -1,0 +1,19 @@
+.dialogEx {
+    font-size: 12px;
+}
+
+.dialogEx .btn {
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 25%;
+    width: auto;
+}
+
+.dialogEx .ok-btn {
+    background-color: #ccc;
+}
+
+.dialogEx .cancel-btn {
+    /*background-color: #aeface;*/
+    margin-left: 10%;
+}
