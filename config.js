@@ -26,8 +26,7 @@ var config = {
             define: {
                 freezeTableName: true,
                 timestamps:false
-            },
-            isolationLevel: Sequelize.Transaction.ISOLATION_LEVELS.SERIALIZABLE
+            }
         }//option end
     },
     //mongo     配置，默认是本地

@@ -1,18 +1,16 @@
 #!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
-
 var app = require('../app');
-var debug = require('debug')('bak:server');
+var cfg = require('../config');
 var http = require('http');
-
+var log4j = require("../lib/log4js").logger('start_debug');
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '80');
+var port = normalizePort(process.env.PORT || cfg.port);
 app.set('port', port);
 
 /**
@@ -86,5 +84,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  debug('Listening on ' + bind);
+  log4j.info('Listening on ' + bind);
 }

@@ -22,6 +22,7 @@
     "express": "~4.13.1",
     "express-session": "^1.12.1",
     "formidable": "^1.0.17",
+    "log4js": "^0.6.31",
     "mocha": "^2.3.3",
     "moment": "^2.10.6",
     "mongoose": "^4.2.8",
@@ -32,6 +33,7 @@
     "serve-favicon": "~2.3.0",
     "should": "^7.1.1",
     "superagent": "^1.6.1",
-    "utility": "^1.6.0"
+    "utility": "^1.6.0",
+    "winston": "^2.1.1"
   }
 }
