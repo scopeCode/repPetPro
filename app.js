@@ -2,20 +2,15 @@ var express       =     require('express');
 var session       =     require('express-session');
 var dustjs        =     require('adaro');
 var path          =     require('path');
-//var favicon       =     require('serve-favicon');
 var cookieParser  =     require('cookie-parser');
 var bodyParser    =     require('body-parser');
 var compression   =     require('compression');
 var app           =     express();
 var cfg           =     require('./config');
 var routes        =     require("./routes");
+require("./models/models");
 
-/*var options = {
-  helpers: [
-    //'./common/dustHelper'
-  ],
-  cache: false
-};*/
+
 app.engine("html",dustjs.dust());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
